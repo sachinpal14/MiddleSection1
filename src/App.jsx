@@ -6,6 +6,7 @@ import MiddleSection from "./components/MiddleSection/MiddleSection";
 
 
 const dummyData = {
+  para:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam incidunt numquam officia placeat, libero repellat error voluptatum eum enim facilis iure consequatur in labore, est  .",
   profilePic:  "https://th.bing.com/th/id/OIP.UGlKxiZQylR3CnJIXSbFIAHaLL?w=203&h=307&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
   name: "Himanshu Choudhary",
   title: "Building Uniisphere | Masters Union",

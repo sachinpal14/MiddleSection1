@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 30vw;
-    height: 70vh;
+    min-height:80vh ;
     position: relative;
   }
   
@@ -114,8 +114,19 @@
     font-weight: 100;
     color: #828282ea;
   }
-  
-  .middle-section-1-skill-list {
+
+  .middle-section-1-paragraphAndArrow{
+  width: 100%;
+  display: flex;
+padding: 2px 5px;
+align-items: center;
+}
+.para {
+  text-align: start;
+  font-size: 14px;
+}
+
+.middle-section-1-skill-list {
     display: flex;
     align-items: center;
     justify-content: space-evenly;

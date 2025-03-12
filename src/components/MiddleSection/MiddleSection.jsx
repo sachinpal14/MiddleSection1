@@ -2,11 +2,9 @@ import React from "react";
 import "./MiddleSection.css";
 import { GoLock } from "react-icons/go";
 import Button from "../Button.jsx/Button";
-
+import { RiArrowDropRightLine } from "react-icons/ri";
 const MiddleSection = ({ dummyData }) => {
   return (
- 
-
     <div className="middle-section-1-middle-container">
       <div className="middle-section-1-middle-section">
         {/* Profile Details */}
@@ -30,7 +28,7 @@ const MiddleSection = ({ dummyData }) => {
             <span>{dummyData.connections} </span>
           </div>
         </div>
-{/* Name and the Details */}
+        {/* Name and the Details */}
         <div className="middle-section-1-profile-info">
           <h2>{dummyData.name}</h2>
           <p>{dummyData.title}</p>
@@ -52,7 +50,7 @@ const MiddleSection = ({ dummyData }) => {
         {/* Collaborators */}
         <div className="middle-section-1-collabs-section">
           <h3>Collabs</h3>
-{/* Card for to wrap the all things */}
+          {/* Card for to wrap the all things */}
           <div className="middle-section-1-collabratorCard">
             <div className="middle-section-1-collabratorDetails">
               {/* collaborator details */}
@@ -64,8 +62,7 @@ const MiddleSection = ({ dummyData }) => {
                 ))}
               </div>
               <div className="middle-section-1-subCollabrators">
-                {/* names under the education of the collabs section  */}
-                (
+                {/* names under the education of the collabs section  */}(
                 {dummyData.collaborators.subCollabrators.map((val) => (
                   <h6>{val},</h6>
                 ))}
@@ -73,6 +70,16 @@ const MiddleSection = ({ dummyData }) => {
               </div>
             </div>
           </div>
+        </div>
+        {/* paragraph div */}
+
+        <div className="middle-section-1-paragraphAndArrow">
+          <div className="para">
+            <p> {dummyData.para}</p>
+          </div>
+        <div className="middle-section-1-icon">
+        <RiArrowDropRightLine className="icon" />
+        </div>
         </div>
 
         {/* Skills */}
@@ -85,13 +92,12 @@ const MiddleSection = ({ dummyData }) => {
             ))}
           </div>
         </div>
-{/* Blur part in the bottom */}
+        {/* Blur part in the bottom */}
         <div className="middle-section-1-blur">
-          
           <div className="middle-section-1-lock">
             {/* Lock Icon */}
             <GoLock className="middle-section-1-lockIcon" />
-          </div> 
+          </div>
           {/* Headings of the Blur part */}
           <div className="middle-section-1-headings">
             <h2>Do you know privacy ?</h2>
