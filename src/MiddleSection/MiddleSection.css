@@ -1,180 +1,176 @@
- 
-
-.middle-section {
-
-  padding: 20px;
+.middle-section-1-middle-section {
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    width: 30vw;
+    height: 70vh;
+    position: relative;
+  }
   
-  border-radius: 12px;
-  text-align: center;
-  flex-direction: column;
-  display: flex;
- justify-content: space-evenly;
- width: 30vw;
- height: 70vh;
- position: relative;
-}
-
-.profile-header {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: end;
-  gap: 40px;
-  align-items: center;
-  padding: 5px;
-  font-size: 20px;
-}
-
-.profile-info {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-
+  .middle-section-1-profile-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    gap: 40px;
+    align-items: center;
+    padding: 5px;
+    font-size: 20px;
+  }
   
-}
-.profile-info h2{
-font-size: 17px;
-}
-
-.imageContainer {
+  .middle-section-1-profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
   
-  height: 75px;
-  width: 75px;
-  border-radius: 50%;
-}
-.profile-pic {
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.profile-header div {
-  display: flex;
-  flex-direction: column-reverse;
-}
-.profile-buttons{
+  .middle-section-1-profile-info h2 {
+    font-size: 17px;
+  }
+  
+  .middle-section-1-imageContainer {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+  }
+  
+  .middle-section-1-profile-pic {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .middle-section-1-profile-header div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .middle-section-1-profile-buttons {
     display: flex;
     justify-content: end;
     gap: 20px;
-   
-}
-
-.btn {
-    background:linear-gradient(to bottom , #ffe9ed,white);
-  color: black;
-  border: 1px solid black;
-  padding:8px 10px; 
-  width: 150px;
- font-size: 15px;
+  }
   
-  border-radius: 5px;
-  cursor: pointer;
-}
-.about-section {
-
-padding: 5px 0px;
-}
- 
-.about-section h3{
-text-align: start;
-}
-.about-section p{
-text-align: start;
-font-size: 14px;
-}
-
-
-.collabs-section h3{
+  .middle-section-1-btn {
+    background: linear-gradient(to bottom, #ffe9ed, white);
+    color: black;
+    border: 1px solid black;
+    padding: 8px 10px;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .middle-section-1-about-section {
+    padding: 5px 0px;
+  }
+  
+  .middle-section-1-about-section h3 {
     text-align: start;
-    
-}
-
-.collabratorCard{
-    padding: 2px 50px;
-   
+  }
   
-}
-.collabratorDetails{
-   
+  .middle-section-1-about-section p {
+    text-align: start;
+    font-size: 14px;
+  }
+  
+  .middle-section-1-collabs-section h3 {
+    text-align: start;
+  }
+  
+  .middle-section-1-collabratorCard {
+    padding: 2px 50px;
+  }
+  
+  .middle-section-1-collabratorDetails {
     flex-direction: column;
     display: flex;
     width: 100px;
-}
-.collabratorDetails h4{
+  }
+  
+  .middle-section-1-collabratorDetails h4 {
     font-size: 15px;
-font-weight: 500;
+    font-weight: 500;
     text-align: start;
-}
-.collabratorDetails .education{
+  }
+  
+  .middle-section-1-collabratorDetails .middle-section-1-education {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
-
-}
-.collabratorDetails .education h6{
+  }
+  
+  .middle-section-1-collabratorDetails .middle-section-1-education h6 {
     font-weight: 300;
-    color: #726d6dea
-}
-
-.collabratorDetails .subCollabrators{
+    color: #726d6dea;
+  }
+  
+  .middle-section-1-collabratorDetails .middle-section-1-subCollabrators {
     display: flex;
     align-items: center;
     gap: 2px;
     color: #514f4fea;
-
-}
-.collabratorDetails .subCollabrators h6{
+  }
+  
+  .middle-section-1-collabratorDetails .middle-section-1-subCollabrators h6 {
     font-size: 7px;
     font-weight: 100;
-    color: #828282ea
-}
-
-.skill-list{
+    color: #828282ea;
+  }
+  
+  .middle-section-1-skill-list {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 5px;
     flex-wrap: wrap;
-gap: 20px;
+    gap: 20px;
     flex-wrap: wrap;
-}
-.skill-list .skillsMiniDiv{
+  }
+  
+  .middle-section-1-skill-list .middle-section-1-skillsMiniDiv {
     background-color: #f3efef;
     border-radius: 5px;
     padding: 5px 10px;
-}
-.blur{
+  }
+  
+  .middle-section-1-blur {
     position: absolute;
-     backdrop-filter: blur(1px);
-     background-color: rgba(255, 255, 255, 0.815);
+    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.815);
     height: 150px;
     width: 100%;
     bottom: 0;
     flex-direction: column;
     display: flex;
-    gap: 15x;
+    gap: 15px; /* Corrected from 15x */
     align-items: center;
-
-}
-
-.blur h2{
-    font-weight:600 ;
+  }
+  
+  .middle-section-1-blur h2 {
+    font-weight: 600;
     font-size: 22px;
-}
-.blur h3{
-    font-weight:100 ;
+  }
+  
+  .middle-section-1-blur h3 {
+    font-weight: 100;
     font-size: 22px;
-}
-.blur .lock{
+  }
+  
+  .middle-section-1-blur .middle-section-1-lock {
     border: 2px solid black;
     border-radius: 50%;
     height: fit-content;
     width: fit-content;
     padding: 10px;
-
-}
-.lockIcon {
+  }
+  
+  .middle-section-1-lockIcon {
     font-size: 45px;
     font-weight: 500;
-}
+  }
