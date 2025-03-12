@@ -1,5 +1,6 @@
 .middle-section-1-middle-section {
     padding: 20px;
+    box-shadow: 3px 3px 3px 3px rgb(220, 216, 216);
     border-radius: 12px;
     text-align: center;
     flex-direction: column;
@@ -54,16 +55,7 @@
     gap: 20px;
   }
   
-  .middle-section-1-btn {
-    background: linear-gradient(to bottom, #ffe9ed, white);
-    color: black;
-    border: 1px solid black;
-    padding: 8px 10px;
-    width: 150px;
-    font-size: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+  
   
   .middle-section-1-about-section {
     padding: 5px 0px;
@@ -142,14 +134,17 @@
   .middle-section-1-blur {
     position: absolute;
     backdrop-filter: blur(1px);
-    background-color: rgba(255, 255, 255, 0.815);
+    background-color: #ffffffd0;
+    
     height: 150px;
     width: 100%;
     bottom: 0;
     flex-direction: column;
     display: flex;
-    gap: 15px; /* Corrected from 15x */
+    gap: 15px; 
+    left: 0;
     align-items: center;
+
   }
   
   .middle-section-1-blur h2 {

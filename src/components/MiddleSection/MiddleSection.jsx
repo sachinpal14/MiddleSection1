@@ -1,6 +1,7 @@
 import React from "react";
 import "./MiddleSection.css";
 import { GoLock } from "react-icons/go";
+import Button from "../Button.jsx/Button";
 
 const MiddleSection = ({ dummyData }) => {
   return (
@@ -38,9 +39,7 @@ const MiddleSection = ({ dummyData }) => {
         {/* Buttons */}
         <div className="middle-section-1-profile-buttons">
           {dummyData.buttons.map((btn, index) => (
-            <button key={index} className="middle-section-1-btn">
-              {btn}
-            </button>
+            <Button btn={btn} index={index} />
           ))}
         </div>
 

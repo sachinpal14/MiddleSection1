@@ -1,6 +1,7 @@
 import React from "react";
-import CenteredLayout from "./CenterLayout/CenteredLayout";
-import MiddleSection from "./MiddleSection/MiddleSection";
+import CenteredLayout from "./components/CenterLayout/CenteredLayout";
+import MiddleSection from "./components/MiddleSection/MiddleSection";
+
 
 
 
