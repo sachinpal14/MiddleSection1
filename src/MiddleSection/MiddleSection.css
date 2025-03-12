@@ -1,0 +1,180 @@
+ 
+
+.middle-section {
+
+  padding: 20px;
+  
+  border-radius: 12px;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+ justify-content: space-evenly;
+ width: 30vw;
+ height: 70vh;
+ position: relative;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  gap: 40px;
+  align-items: center;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  
+}
+.profile-info h2{
+font-size: 17px;
+}
+
+.imageContainer {
+  
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+.profile-pic {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-header div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.profile-buttons{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+   
+}
+
+.btn {
+    background:linear-gradient(to bottom , #ffe9ed,white);
+  color: black;
+  border: 1px solid black;
+  padding:8px 10px; 
+  width: 150px;
+ font-size: 15px;
+  
+  border-radius: 5px;
+  cursor: pointer;
+}
+.about-section {
+
+padding: 5px 0px;
+}
+ 
+.about-section h3{
+text-align: start;
+}
+.about-section p{
+text-align: start;
+font-size: 14px;
+}
+
+
+.collabs-section h3{
+    text-align: start;
+    
+}
+
+.collabratorCard{
+    padding: 2px 50px;
+   
+  
+}
+.collabratorDetails{
+   
+    flex-direction: column;
+    display: flex;
+    width: 100px;
+}
+.collabratorDetails h4{
+    font-size: 15px;
+font-weight: 500;
+    text-align: start;
+}
+.collabratorDetails .education{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+.collabratorDetails .education h6{
+    font-weight: 300;
+    color: #726d6dea
+}
+
+.collabratorDetails .subCollabrators{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: #514f4fea;
+
+}
+.collabratorDetails .subCollabrators h6{
+    font-size: 7px;
+    font-weight: 100;
+    color: #828282ea
+}
+
+.skill-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    flex-wrap: wrap;
+gap: 20px;
+    flex-wrap: wrap;
+}
+.skill-list .skillsMiniDiv{
+    background-color: #f3efef;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.blur{
+    position: absolute;
+     backdrop-filter: blur(1px);
+     background-color: rgba(255, 255, 255, 0.815);
+    height: 150px;
+    width: 100%;
+    bottom: 0;
+    flex-direction: column;
+    display: flex;
+    gap: 15x;
+    align-items: center;
+
+}
+
+.blur h2{
+    font-weight:600 ;
+    font-size: 22px;
+}
+.blur h3{
+    font-weight:100 ;
+    font-size: 22px;
+}
+.blur .lock{
+    border: 2px solid black;
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+
+}
+.lockIcon {
+    font-size: 45px;
+    font-weight: 500;
+}
