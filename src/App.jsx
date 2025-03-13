@@ -1,5 +1,5 @@
 import React from "react";
-import MiddleSection from "./components/MiddleSection/MiddleSection-1";
+import MiddleSection1 from "./components/MiddleSection/MiddleSection-1";
  
 
 
@@ -25,7 +25,7 @@ const dummyData = {
 const App = () => {
   return (
  
-      <MiddleSection dummyData={dummyData} />
+      <MiddleSection1 dummyData={dummyData} />
    
   );
 };

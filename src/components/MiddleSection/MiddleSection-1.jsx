@@ -3,7 +3,7 @@ import "./MiddleSection-1.css";
 import { GoLock } from "react-icons/go";
  
 import { RiArrowDropRightLine } from "react-icons/ri";
-const MiddleSection = ({ dummyData }) => {
+const MiddleSection1 = ({ dummyData }) => {
   return (
     <div className="middle-section-1-mainParent">
       <div className="middle-section-1-middle-container">
@@ -115,4 +115,4 @@ const MiddleSection = ({ dummyData }) => {
   );
 };
 
-export default MiddleSection;
+export default MiddleSection1;
