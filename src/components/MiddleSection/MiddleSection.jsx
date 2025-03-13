@@ -74,11 +74,11 @@ const MiddleSection = ({ dummyData }) => {
         {/* paragraph div */}
 
         <div className="middle-section-1-paragraphAndArrow">
-          <div className="para">
+          <div className="middle-section-1-para ">
             <p> {dummyData.para}</p>
           </div>
         <div className="middle-section-1-icon">
-        <RiArrowDropRightLine className="icon" />
+        <RiArrowDropRightLine className="middle-section-1-paragrapgh-icon" />
         </div>
         </div>
 
