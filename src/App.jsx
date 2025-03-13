@@ -1,6 +1,6 @@
 import React from "react";
+import MiddleSection from "./components/MiddleSection/MiddleSection-1";
  
-import MiddleSection from "./components/MiddleSection/MiddleSection";
 
 
 

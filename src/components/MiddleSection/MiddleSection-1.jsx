@@ -1,5 +1,5 @@
 import React from "react";
-import "./MiddleSection.css";
+import "./MiddleSection-1.css";
 import { GoLock } from "react-icons/go";
  
 import { RiArrowDropRightLine } from "react-icons/ri";
