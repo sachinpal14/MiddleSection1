@@ -2,23 +2,21 @@ import React, { useState } from "react";
 import "./MiddleSection-1.css";
 import { GoLock } from "react-icons/go";
 import { RiArrowDropRightLine } from "react-icons/ri";
-
-const MiddleSection1 = ({ initialData }) => {
-  // Managing each piece of dynamic data separately
-
-
-  // const [profilePic, setProfilePic] = useState(initialData.profilePic);
-  // const [collabs, setCollabs] = useState(initialData.collabs);
-  // const [connections, setConnections] = useState(initialData.connections);
-  // const [name, setName] = useState(initialData.name);
-  // const [title, setTitle] = useState(initialData.title);
-  // const [buttons, setButtons] = useState(initialData.buttons);
-  // const [about, setAbout] = useState(initialData.about);
-  // const [collaboratorName, setCollaboratorName] = useState(initialData.collaborators.name);
-  // const [education, setEducation] = useState(initialData.collaborators.education);
-  // const [subCollaborators, setSubCollaborators] = useState(initialData.collaborators.subCollabrators);
-  // const [paragraph, setParagraph] = useState(initialData.para);
-  // const [skills, setSkills] = useState(initialData.skills);
+import image from '../../assets/person.jpeg'
+const MiddleSection1 = () => {
+  // Static data for testing
+  const [profilePic, setProfilePic] = useState(image);
+  const [collabs, setCollabs] = useState(12);
+  const [connections, setConnections] = useState(34);
+  const [name, setName] = useState("John Doe");
+  const [title, setTitle] = useState("Full Stack Developer | React & Node.js");
+  const [buttons, setButtons] = useState([ "Message", "Follow"]);
+  const [about, setAbout] = useState("I am a passionate full-stack developer with expertise in React and Node.js.");
+  const [collaboratorName, setCollaboratorName] = useState("Jane Smith");
+  const [education, setEducation] = useState(["B.Tech in CS", "M.Tech in AI"]);
+  const [subCollaborators, setSubCollaborators] = useState(["Alice", "Bob", "Charlie"]);
+  const [paragraph, setParagraph] = useState("Passionate about coding and problem-solving.");
+  const [skills, setSkills] = useState(["JavaScript", "React", "Node.js", "MongoDB"]);
 
   return (
     <div className="middle-section-1-mainParent">
@@ -27,38 +25,36 @@ const MiddleSection1 = ({ initialData }) => {
           {/* Profile Details */}
           <div className="middle-section-1-profile-header">
             <div className="middle-section-1-imageContainer">
-              {/* Profile Image */}
-              <img src={image} alt="Profile" className="middle-section-1-profile-pic" />
+              <img src={profilePic} alt="Profile" className="middle-section-1-profile-pic" />
             </div>
-            {/* Number of Connections and Collabs */}
             <div className="middle-section-1-collabsDetails">
-              <h4>Collabs</h4> <span>{120}</span>
+              <h4>Collabs</h4> <span>{collabs}</span>
             </div>
             <div className="middle-section-1-connectionsDetails">
               <h4>Connections</h4>
-              <span>{260}</span>
+              <span>{connections}</span>
             </div>
           </div>
 
           {/* Name and Details */}
           <div className="middle-section-1-profile-info">
-            <h2>{"Harshit Sharma"}</h2>
-            <p>{"Web Developer || Frontend"}</p>
+            <h2>{name}</h2>
+            <p>{title}</p>
           </div>
 
           {/* Buttons */}
           <div className="middle-section-1-profile-buttons">
-            {/* {buttons.map((btn, index) => ( */}
-              <button key={1} className="middle-section-1-btn">
-                {"USB"}
+            {buttons.map((btn, index) => (
+              <button key={index} className="middle-section-1-btn">
+                {btn}
               </button>
-            {/* ))} */}
+            ))}
           </div>
 
           {/* About Section */}
           <div className="middle-section-1-about-section">
             <h3>About</h3>
-            <p>{"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolorum nulla quas architecto illo dignissimos!"}</p>
+            <p>{about}</p>
           </div>
 
           {/* Collaborators */}
@@ -66,16 +62,16 @@ const MiddleSection1 = ({ initialData }) => {
             <h3>Collabs</h3>
             <div className="middle-section-1-collabratorCard">
               <div className="middle-section-1-collabratorDetails">
-                <h4>{"vijay singh"}</h4>
+                <h4>{collaboratorName}</h4>
                 <div className="middle-section-1-education">
-                  {/* {education.map((val, index) => ( */}
-                    <h6 key={1}>{""}</h6>
-                  {/* ))} */}
+                  {education.map((val, index) => (
+                    <h6 key={index}>{val}</h6>
+                  ))}
                 </div>
                 <div className="middle-section-1-subCollabrators">
-                  {/* ({subCollaborators.map((val, index) => ( */}
-                    <h6 key={1}>{"Tarun , Shivam "},</h6>
-                  {/* ))}) */}
+                  ({subCollaborators.map((val, index) => (
+                    <h6 key={index}>{val},</h6>
+                  ))})
                 </div>
               </div>
             </div>
@@ -84,7 +80,7 @@ const MiddleSection1 = ({ initialData }) => {
           {/* Paragraph and Arrow */}
           <div className="middle-section-1-paragraphAndArrow">
             <div className="middle-section-1-para">
-              <p>{"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, quo consectetur. Tenetur sit magni dolorum, debitis ab expedita autem quia laborum eum fuga atque consectetur?"}</p>
+              <p>{paragraph}</p>
             </div>
             <div className="middle-section-1-icon">
               <RiArrowDropRightLine className="middle-section-1-paragrapgh-icon" />
@@ -95,11 +91,11 @@ const MiddleSection1 = ({ initialData }) => {
           <div className="middle-section-1-skills-section">
             <h3>Skills</h3>
             <div className="middle-section-1-skill-list">
-              {/* {skills.map((val, index) => ( */}
-                <div key={1} className="middle-section-1-skillsMiniDiv">
-                  C++
+              {skills.map((val, index) => (
+                <div key={index} className="middle-section-1-skillsMiniDiv">
+                  {val}
                 </div>
-              {/* ))} */}
+              ))}
             </div>
           </div>
 
