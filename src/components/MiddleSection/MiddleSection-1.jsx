@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./MiddleSection-1.css";
 import { GoLock } from "react-icons/go";
 import { RiArrowDropRightLine } from "react-icons/ri";
-import image from '../../assets/person.jpeg'
+import image from "../../assets/person.jpeg";
 const MiddleSection1 = () => {
   // Static data for testing
   const [profilePic, setProfilePic] = useState(image);
@@ -10,13 +10,40 @@ const MiddleSection1 = () => {
   const [connections, setConnections] = useState(34);
   const [name, setName] = useState("John Doe");
   const [title, setTitle] = useState("Full Stack Developer | React & Node.js");
-  const [buttons, setButtons] = useState([ "Message", "Follow"]);
-  const [about, setAbout] = useState("I am a passionate full-stack developer with expertise in React and Node.js.");
+  const [buttons, setButtons] = useState(["Message", "Follow"]);
+  const [about, setAbout] = useState(
+    "I am a passionate full-stack developer with expertise in React and Node.js."
+  );
   const [collaboratorName, setCollaboratorName] = useState("Jane Smith");
   const [education, setEducation] = useState(["B.Tech in CS", "M.Tech in AI"]);
-  const [subCollaborators, setSubCollaborators] = useState(["Alice", "Bob", "Charlie"]);
-  const [paragraph, setParagraph] = useState("Passionate about coding and problem-solving.");
-  const [skills, setSkills] = useState(["JavaScript", "React", "Node.js", "MongoDB"]);
+  const [subCollaborators, setSubCollaborators] = useState([
+    "Alice",
+    "Bob",
+    "Charlie",
+  ]);
+  const [paragraph, setParagraph] = useState(
+    "Passionate about coding and problem-solving."
+  );
+  const [skills, setSkills] = useState([
+    "JavaScript",
+    "React",
+    "Node.js",
+    "MongoDB",
+  ]);
+  const [isExpanded, setIsExpanded] = useState(false);
+  // About Section with "See More" Feature
+  const [fullAboutText, setfullAboutText] = useState(
+    "Passionate developer with experience in web and mobile development. I specialize in React, Node.js, and building scalable applications. Love to work on open-source projects and contribute to the tech community."
+  );
+
+  const toggleExpand = () => setIsExpanded(!isExpanded);
+
+  // Limiting text length before showing "See More"
+  const maxLength = 100;
+  const displayedText = isExpanded
+    ? fullAboutText
+    : fullAboutText.slice(0, maxLength) +
+      (fullAboutText.length > maxLength ? "..." : "");
 
   return (
     <div className="middle-section-1-mainParent">
@@ -25,7 +52,11 @@ const MiddleSection1 = () => {
           {/* Profile Details */}
           <div className="middle-section-1-profile-header">
             <div className="middle-section-1-imageContainer">
-              <img src={profilePic} alt="Profile" className="middle-section-1-profile-pic" />
+              <img
+                src={profilePic}
+                alt="Profile"
+                className="middle-section-1-profile-pic"
+              />
             </div>
             <div className="middle-section-1-collabsDetails">
               <h4>Collabs</h4> <span>{collabs}</span>
@@ -54,9 +85,21 @@ const MiddleSection1 = () => {
           {/* About Section */}
           <div className="middle-section-1-about-section">
             <h3>About</h3>
-            <p>{about}</p>
-          </div>
 
+            <p>
+              {displayedText}
+              <span>
+                {fullAboutText.length > maxLength && (
+                  <button
+                    className="middle-section-1-about-button"
+                    onClick={toggleExpand}
+                  >
+                    {isExpanded ? "See Less" : "See More"}
+                  </button>
+                )}
+              </span>
+            </p>
+          </div>
           {/* Collaborators */}
           <div className="middle-section-1-collabs-section">
             <h3>Collabs</h3>
@@ -69,9 +112,11 @@ const MiddleSection1 = () => {
                   ))}
                 </div>
                 <div className="middle-section-1-subCollabrators">
-                  ({subCollaborators.map((val, index) => (
+                  (
+                  {subCollaborators.map((val, index) => (
                     <h6 key={index}>{val},</h6>
-                  ))})
+                  ))}
+                  )
                 </div>
               </div>
             </div>

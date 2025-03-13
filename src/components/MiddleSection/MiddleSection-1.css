@@ -1,241 +1,241 @@
-.middle-section-1-mainParent{
+.middle-section-1-mainParent {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .middle-section-1-middle-section {
-    padding: 20px;
-    box-shadow: 3px 3px 3px 3px rgb(220, 216, 216);
-    border-radius: 12px;
-    text-align: center;
-    flex-direction: column;
-    display: flex;
-    justify-content: space-evenly;
-    width: 30vw;
-    min-height:100vh ;
-    position: relative;
-  }
-  
-  .middle-section-1-profile-header {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: end;
-    gap: 40px;
-    align-items: center;
-    padding: 5px;
-    font-size: 20px;
-  }
-  
-  .middle-section-1-profile-info {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-  }
-  
-  .middle-section-1-profile-info h2 {
-    font-size: 17px;
-  }
-  
-  .middle-section-1-imageContainer {
-    height: 75px;
-    width: 75px;
-    border-radius: 50%;
-  }
-  
-  .middle-section-1-profile-pic {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .middle-section-1-profile-header div {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  
-  .middle-section-1-profile-buttons {
-    display: flex;
-    justify-content: end;
-    gap: 20px;
-  }
-  
-  
-  
-  .middle-section-1-about-section {
-    padding: 5px 0px;
-  }
-  
-  .middle-section-1-about-section h3 {
-    text-align: start;
-  }
-  
-  .middle-section-1-about-section p {
-    text-align: start;
-    font-size: 14px;
-  }
-  
-  .middle-section-1-collabs-section h3 {
-    text-align: start;
-  }
-  
-  .middle-section-1-collabratorCard {
-    padding: 2px 50px;
-  }
-  
-  .middle-section-1-collabratorDetails {
-    flex-direction: column;
-    display: flex;
-    width: 100px;
-  }
-  
-  .middle-section-1-collabratorDetails h4 {
-    font-size: 15px;
-    font-weight: 500;
-    text-align: start;
-  }
-  
-  .middle-section-1-collabratorDetails .middle-section-1-education {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-  }
-  
-  .middle-section-1-collabratorDetails .middle-section-1-education h6 {
-    font-weight: 300;
-    color: #726d6dea;
-  }
-  
-  .middle-section-1-collabratorDetails .middle-section-1-subCollabrators {
-    display: flex;
-    align-items: center;
-    gap: 2px;
-    color: #514f4fea;
-  }
-  
-  .middle-section-1-collabratorDetails .middle-section-1-subCollabrators h6 {
-    font-size: 7px;
-    font-weight: 100;
-    color: #828282ea;
-  }
+  padding: 20px;
+  box-shadow: 3px 3px 3px 3px rgb(220, 216, 216);
+  border-radius: 12px;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  width: 30vw;
+  min-height: 100vh;
+  position: relative;
+}
 
-  .middle-section-1-paragraphAndArrow{
+.middle-section-1-profile-header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  gap: 40px;
+  align-items: center;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.middle-section-1-profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.middle-section-1-profile-info h2 {
+  font-size: 17px;
+}
+
+.middle-section-1-imageContainer {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+
+.middle-section-1-profile-pic {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.middle-section-1-profile-header div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.middle-section-1-profile-buttons {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.middle-section-1-about-section {
+  padding: 5px 0px;
+}
+
+.middle-section-1-about-section h3 {
+  text-align: start;
+}
+.middle-section-1-about-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: rgb(144, 143, 143);
+}
+.middle-section-1-about-section p {
+  text-align: start;
+  font-size: 14px;
+}
+
+.middle-section-1-collabs-section h3 {
+  text-align: start;
+}
+
+.middle-section-1-collabratorCard {
+  padding: 2px 50px;
+}
+
+.middle-section-1-collabratorDetails {
+  flex-direction: column;
+  display: flex;
+  width: 100px;
+}
+
+.middle-section-1-collabratorDetails h4 {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: start;
+}
+
+.middle-section-1-collabratorDetails .middle-section-1-education {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.middle-section-1-collabratorDetails .middle-section-1-education h6 {
+  font-weight: 300;
+  color: #726d6dea;
+}
+
+.middle-section-1-collabratorDetails .middle-section-1-subCollabrators {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #514f4fea;
+}
+
+.middle-section-1-collabratorDetails .middle-section-1-subCollabrators h6 {
+  font-size: 7px;
+  font-weight: 100;
+  color: #828282ea;
+}
+
+.middle-section-1-paragraphAndArrow {
   width: 100%;
   display: flex;
-padding: 2px 5px;
-align-items: center;
+  padding: 2px 5px;
+  align-items: center;
 }
 .middle-section-1-para {
   text-align: start;
   font-size: 14px;
 }
-.middle-section-1-paragrapgh-icon{
+.middle-section-1-paragrapgh-icon {
   font-size: 30px;
 }
 
 .middle-section-1-skill-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 5px;
-    flex-wrap: wrap;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .middle-section-1-skill-list .middle-section-1-skillsMiniDiv {
-    background-color: #f3efef;
-    border-radius: 5px;
-    padding: 5px 10px;
-  }
-  
-  .middle-section-1-blur {
-    position: absolute;
-    backdrop-filter: blur(1px);
-    background-color: #ffffffbe;
-    
-    height: 140px;
-    width: 100%;
-    bottom: 0;
-    flex-direction: column;
-    display: flex;
-    gap: 15px; 
-    left: 0;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
+.middle-section-1-skill-list .middle-section-1-skillsMiniDiv {
+  background-color: #f3efef;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.middle-section-1-blur {
+  position: absolute;
+  backdrop-filter: blur(1px);
+  background-color: #ffffffbe;
+
+  height: 140px;
+  width: 100%;
+  bottom: 0;
+  flex-direction: column;
+  display: flex;
+  gap: 15px;
+  left: 0;
+  align-items: center;
+}
+
+.middle-section-1-blur h2 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.middle-section-1-blur h3 {
+  font-weight: 100;
+  font-size: 22px;
+}
+
+.middle-section-1-blur .middle-section-1-lock {
+  border: 2px solid black;
+  border-radius: 50%;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+}
+
+.middle-section-1-lockIcon {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.middle-section-1-btn {
+  background: linear-gradient(to bottom, #ffe9ed, white);
+  color: black;
+  border: 1px solid black;
+  padding: 8px 10px;
+  width: 150px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) and (max-width: 1062px) {
+  .middle-section-1-middle-section {
+    width: 40vw;
+    padding: 30px;
   }
-  
-  .middle-section-1-blur h2 {
-    font-weight: 600;
-    font-size: 22px;
-  }
-  
-  .middle-section-1-blur h3 {
-    font-weight: 100;
-    font-size: 22px;
-  }
-  
-  .middle-section-1-blur .middle-section-1-lock {
-    border: 2px solid black;
-    border-radius: 50%;
-    height: fit-content;
-    width: fit-content;
-    padding: 10px;
-  }
-  
-  .middle-section-1-lockIcon {
-    font-size: 45px;
-    font-weight: 500;
+  .middle-section-1-imageContainer {
+    width: 90px;
+    height: 90px;
   }
 
-  .middle-section-1-btn {
-    background: linear-gradient(to bottom, #ffe9ed, white);
-    color: black;
-    border: 1px solid black;
-    padding: 8px 10px;
+  .middle-section-1-profile-header {
+    font-size: 20px;
+  }
+  .middle-section-1-profile-info h2 {
+    font-size: 20px;
+  }
+  .middle-section-1-about-section p {
+    font-size: 16px;
+  }
+  .middle-section-1-collabratorDetails {
     width: 150px;
-    font-size: 15px;
-    border-radius: 5px;
-    cursor: pointer;
   }
-
-
-  @media (min-width: 1024px ) and (max-width:1062px) {
-    .middle-section-1-middle-section {
-        width: 40vw;
-        padding: 30px;
-       
-    }
-    .middle-section-1-imageContainer{
-      width: 90px;
-      height: 90px;
-    }
-    
-    .middle-section-1-profile-header {
-        font-size: 20px;
-    }
-    .middle-section-1-profile-info h2 {
-        font-size: 20px;
-    }
-    .middle-section-1-about-section p {
-        font-size: 16px;
-    }
-    .middle-section-1-collabratorDetails {
-        width: 150px;
-    }
-    .middle-section-1-collabratorDetails h4 {
-        font-size: 18px;
-    }
-    .middle-section-1-collabratorDetails .middle-section-1-subCollabrators h6 {
-        font-size: 10px;
-    }
-    .middle-section-1-blur {
-        height: 170px;
-    }
-    .middle-section-1-blur h2, .middle-section-1-blur h3 {
-        font-size: 26px;
-    }
-
+  .middle-section-1-collabratorDetails h4 {
+    font-size: 18px;
+  }
+  .middle-section-1-collabratorDetails .middle-section-1-subCollabrators h6 {
+    font-size: 10px;
+  }
+  .middle-section-1-blur {
+    height: 170px;
+  }
+  .middle-section-1-blur h2,
+  .middle-section-1-blur h3 {
+    font-size: 26px;
+  }
 }
