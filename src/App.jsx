@@ -1,5 +1,5 @@
 import React from "react";
-import CenteredLayout from "./components/CenterLayout/CenteredLayout";
+ 
 import MiddleSection from "./components/MiddleSection/MiddleSection";
 
 
@@ -24,9 +24,9 @@ const dummyData = {
 
 const App = () => {
   return (
-    <CenteredLayout>
+ 
       <MiddleSection dummyData={dummyData} />
-    </CenteredLayout>
+   
   );
 };
 

@@ -1,11 +1,12 @@
 import React from "react";
 import "./MiddleSection.css";
 import { GoLock } from "react-icons/go";
-import Button from "../Button.jsx/Button";
+ 
 import { RiArrowDropRightLine } from "react-icons/ri";
 const MiddleSection = ({ dummyData }) => {
   return (
-    <div className="middle-section-1-middle-container">
+    <div className="middle-section-1-mainParent">
+      <div className="middle-section-1-middle-container">
       <div className="middle-section-1-middle-section">
         {/* Profile Details */}
         <div className="middle-section-1-profile-header">
@@ -37,7 +38,11 @@ const MiddleSection = ({ dummyData }) => {
         {/* Buttons */}
         <div className="middle-section-1-profile-buttons">
           {dummyData.buttons.map((btn, index) => (
-            <Button btn={btn} index={index} />
+          <div>
+          <button key={index} className="middle-section-1-btn">
+                {btn}
+              </button>
+      </div>
           ))}
         </div>
 
@@ -105,6 +110,7 @@ const MiddleSection = ({ dummyData }) => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -1,3 +1,9 @@
+.middle-section-1-mainParent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .middle-section-1-middle-section {
     padding: 20px;
     box-shadow: 3px 3px 3px 3px rgb(220, 216, 216);
@@ -150,7 +156,7 @@ align-items: center;
     backdrop-filter: blur(1px);
     background-color: #ffffffbe;
     
-    height: 150px;
+    height: 140px;
     width: 100%;
     bottom: 0;
     flex-direction: column;
@@ -182,6 +188,17 @@ align-items: center;
   .middle-section-1-lockIcon {
     font-size: 45px;
     font-weight: 500;
+  }
+
+  .middle-section-1-btn {
+    background: linear-gradient(to bottom, #ffe9ed, white);
+    color: black;
+    border: 1px solid black;
+    padding: 8px 10px;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
   }
 
 
