@@ -3,42 +3,30 @@ import "./MiddleSection-1.css";
 import { GoLock } from "react-icons/go";
 import { RiArrowDropRightLine } from "react-icons/ri";
 import image from "../../assets/person.jpeg";
+
 const MiddleSection1 = () => {
   // Static data for testing
-  const [profilePic, setProfilePic] = useState(image);
-  const [collabs, setCollabs] = useState(12);
-  const [connections, setConnections] = useState(34);
-  const [name, setName] = useState("John Doe");
-  const [title, setTitle] = useState("Full Stack Developer | React & Node.js");
-  const [buttons, setButtons] = useState(["Message", "Follow"]);
-  const [about, setAbout] = useState(
+  const [profilePic] = useState(image);
+  const [collabs] = useState(12);
+  const [connections] = useState(34);
+  const [name] = useState("John Doe");
+  const [title] = useState("Full Stack Developer | React & Node.js");
+  const [buttons] = useState(["Message", "Follow"]);
+  const [about] = useState(
     "I am a passionate full-stack developer with expertise in React and Node.js."
   );
-  const [collaboratorName, setCollaboratorName] = useState("Jane Smith");
-  const [education, setEducation] = useState(["B.Tech in CS", "M.Tech in AI"]);
-  const [subCollaborators, setSubCollaborators] = useState([
-    "Alice",
-    "Bob",
-    "Charlie",
-  ]);
-  const [paragraph, setParagraph] = useState(
-    "Passionate about coding and problem-solving."
-  );
-  const [skills, setSkills] = useState([
-    "JavaScript",
-    "React",
-    "Node.js",
-    "MongoDB",
-  ]);
+  const [collaboratorName] = useState("Jane Smith");
+  const [education] = useState(["B.Tech in CS", "M.Tech in AI"]);
+  const [subCollaborators] = useState(["Alice", "Bob", "Charlie"]);
+  const [paragraph] = useState("Passionate about coding and problem-solving.");
+  const [skills] = useState(["JavaScript", "React", "Node.js", "MongoDB"]);
   const [isExpanded, setIsExpanded] = useState(false);
-  // About Section with "See More" Feature
-  const [fullAboutText, setfullAboutText] = useState(
+  const [fullAboutText] = useState(
     "Passionate developer with experience in web and mobile development. I specialize in React, Node.js, and building scalable applications. Love to work on open-source projects and contribute to the tech community."
   );
 
   const toggleExpand = () => setIsExpanded(!isExpanded);
 
-  // Limiting text length before showing "See More"
   const maxLength = 100;
   const displayedText = isExpanded
     ? fullAboutText
@@ -46,72 +34,59 @@ const MiddleSection1 = () => {
       (fullAboutText.length > maxLength ? "..." : "");
 
   return (
-    <div className="middle-section-1-mainParent">
-      <div className="middle-section-1-middle-container">
-        <div className="middle-section-1-middle-section">
-          {/* Profile Details */}
-          <div className="middle-section-1-profile-header">
-            <div className="middle-section-1-imageContainer">
-              <img
-                src={profilePic}
-                alt="Profile"
-                className="middle-section-1-profile-pic"
-              />
+    <div className="Followers-middle-section-1-mainParent-privacy">
+      <div className="Followers-middle-section-1-middle-container-privacy">
+        <div className="Followers-middle-section-1-middle-section-privacy">
+          <div className="Followers-middle-section-1-profile-header-privacy">
+            <div className="Followers-middle-section-1-imageContainer-privacy">
+              <img src={profilePic} alt="Profile" className="Followers-middle-section-1-profile-pic-privacy" />
             </div>
-            <div className="middle-section-1-collabsDetails">
+            <div className="Followers-middle-section-1-collabsDetails-privacy">
               <h4>Collabs</h4> <span>{collabs}</span>
             </div>
-            <div className="middle-section-1-connectionsDetails">
+            <div className="Followers-middle-section-1-connectionsDetails-privacy">
               <h4>Connections</h4>
               <span>{connections}</span>
             </div>
           </div>
 
-          {/* Name and Details */}
-          <div className="middle-section-1-profile-info">
+          <div className="Followers-middle-section-1-profile-info-privacy">
             <h2>{name}</h2>
             <p>{title}</p>
           </div>
 
-          {/* Buttons */}
-          <div className="middle-section-1-profile-buttons">
+          <div className="Followers-middle-section-1-profile-buttons-privacy">
             {buttons.map((btn, index) => (
-              <button key={index} className="middle-section-1-btn">
-                {btn}
-              </button>
+              <button key={index} className="Followers-middle-section-1-btn-privacy">{btn}</button>
             ))}
           </div>
 
-          {/* About Section */}
-          <div className="middle-section-1-about-section">
+          <div className="Followers-middle-section-1-about-section-privacy">
             <h3>About</h3>
-
             <p>
               {displayedText}
-              <span>
-                {fullAboutText.length > maxLength && (
-                  <button
-                    className="middle-section-1-about-button"
-                    onClick={toggleExpand}
-                  >
-                    {isExpanded ? "See Less" : "See More"}
-                  </button>
-                )}
-              </span>
+              {fullAboutText.length > maxLength && (
+                <button className="Followers-middle-section-1-about-button-privacy" onClick={toggleExpand}>
+                  {isExpanded ? "See Less" : "See More"}
+                </button>
+              )}
             </p>
           </div>
-          {/* Collaborators */}
-          <div className="middle-section-1-collabs-section">
+
+          <div className="Followers-middle-section-1-collabs-section-privacy">
             <h3>Collabs</h3>
-            <div className="middle-section-1-collabratorCard">
-              <div className="middle-section-1-collabratorDetails">
+            <div className="Followers-middle-section-1-collabratorCard-privacy">
+              <div className="Followers-middle-section-1-collab-image-privacy">
+                <img src={image} alt="" />
+              </div>
+              <div className="Followers-middle-section-1-collabratorDetails-privacy">
                 <h4>{collaboratorName}</h4>
-                <div className="middle-section-1-education">
+                <div className="Followers-middle-section-1-education-privacy">
                   {education.map((val, index) => (
                     <h6 key={index}>{val}</h6>
                   ))}
                 </div>
-                <div className="middle-section-1-subCollabrators">
+                <div className="Followers-middle-section-1-subCollabrators-privacy">
                   (
                   {subCollaborators.map((val, index) => (
                     <h6 key={index}>{val},</h6>
@@ -122,34 +97,30 @@ const MiddleSection1 = () => {
             </div>
           </div>
 
-          {/* Paragraph and Arrow */}
-          <div className="middle-section-1-paragraphAndArrow">
-            <div className="middle-section-1-para">
+          <div className="Followers-middle-section-1-paragraphAndArrow-privacy">
+            <div className="Followers-middle-section-1-para-privacy">
               <p>{paragraph}</p>
             </div>
-            <div className="middle-section-1-icon">
-              <RiArrowDropRightLine className="middle-section-1-paragrapgh-icon" />
+            <div className="Followers-middle-section-1-iconAndImage-privacy">
+              <img src={image} alt="" />
+              <RiArrowDropRightLine className="Followers-middle-section-1-paragrapgh-icon-privacy" />
             </div>
           </div>
 
-          {/* Skills */}
-          <div className="middle-section-1-skills-section">
+          <div className="Followers-middle-section-1-skills-section-privacy">
             <h3>Skills</h3>
-            <div className="middle-section-1-skill-list">
+            <div className="Followers-middle-section-1-skill-list-privacy">
               {skills.map((val, index) => (
-                <div key={index} className="middle-section-1-skillsMiniDiv">
-                  {val}
-                </div>
+                <div key={index} className="Followers-middle-section-1-skillsMiniDiv-privacy">{val}</div>
               ))}
             </div>
           </div>
 
-          {/* Blur Section */}
-          <div className="middle-section-1-blur">
-            <div className="middle-section-1-lock">
-              <GoLock className="middle-section-1-lockIcon" />
+          <div className="Followers-middle-section-1-blur-privacy">
+            <div className="Followers-middle-section-1-lock-privacy">
+              <GoLock className="Followers-middle-section-1-lockIcon-privacy" />
             </div>
-            <div className="middle-section-1-headings">
+            <div className="Followers-middle-section-1-headings-privacy">
               <h2>Do you know privacy?</h2>
               <h3>Connect to explore further</h3>
             </div>

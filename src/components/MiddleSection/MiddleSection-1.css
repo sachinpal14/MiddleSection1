@@ -1,23 +1,23 @@
-.middle-section-1-mainParent {
+.Followers-middle-section-1-mainParent-privacy {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.middle-section-1-middle-section {
+.Followers-middle-section-1-middle-section-privacy {
   padding: 20px;
   box-shadow: 3px 3px 3px 3px rgb(220, 216, 216);
   border-radius: 12px;
   text-align: center;
   flex-direction: column;
   display: flex;
-  justify-content: space-evenly;
+  gap: 15px;
   width: 30vw;
   min-height: 100vh;
   position: relative;
 }
 
-.middle-section-1-profile-header {
+.Followers-middle-section-1-profile-header-privacy {
   display: flex;
   flex-direction: row-reverse;
   justify-content: end;
@@ -27,138 +27,177 @@
   font-size: 20px;
 }
 
-.middle-section-1-profile-info {
+.Followers-middle-section-1-profile-info-privacy {
   display: flex;
   flex-direction: column;
   align-items: end;
 }
 
-.middle-section-1-profile-info h2 {
-  font-size: 17px;
+.Followers-middle-section-1-profile-info-privacy h2 {
+  font-size: 20px;
 }
 
-.middle-section-1-imageContainer {
+.Followers-middle-section-1-imageContainer-privacy {
   height: 75px;
   width: 75px;
   border-radius: 50%;
 }
 
-.middle-section-1-profile-pic {
+.Followers-middle-section-1-profile-pic-privacy {
   height: 100%;
   width: 100%;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.middle-section-1-profile-header div {
+.Followers-middle-section-1-profile-header-privacy div {
   display: flex;
   flex-direction: column-reverse;
 }
 
-.middle-section-1-profile-buttons {
+.Followers-middle-section-1-profile-buttons-privacy {
   display: flex;
   justify-content: end;
   gap: 20px;
 }
 
-.middle-section-1-about-section {
+.Followers-middle-section-1-about-section-privacy {
   padding: 5px 0px;
 }
 
-.middle-section-1-about-section h3 {
+.Followers-middle-section-1-about-section-privacy h3 {
   text-align: start;
+  font-size: 25px;
 }
-.middle-section-1-about-button {
+
+.Followers-middle-section-1-about-button-privacy {
   border: none;
   outline: none;
   background-color: transparent;
   color: rgb(144, 143, 143);
 }
-.middle-section-1-about-section p {
+
+.Followers-middle-section-1-about-section-privacy p {
   text-align: start;
-  font-size: 14px;
+  font-size: 17px;
 }
 
-.middle-section-1-collabs-section h3 {
+.Followers-middle-section-1-collabs-section-privacy h3 {
   text-align: start;
 }
 
-.middle-section-1-collabratorCard {
+.Followers-middle-section-1-collabratorCard-privacy {
   padding: 2px 50px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
-.middle-section-1-collabratorDetails {
+.Followers-middle-section-1-collab-image-privacy {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+}
+
+.Followers-middle-section-1-collab-image-privacy img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.Followers-middle-section-1-collabratorDetails-privacy {
   flex-direction: column;
   display: flex;
   width: 100px;
 }
 
-.middle-section-1-collabratorDetails h4 {
+.Followers-middle-section-1-collabratorDetails-privacy h4 {
   font-size: 15px;
   font-weight: 500;
   text-align: start;
 }
 
-.middle-section-1-collabratorDetails .middle-section-1-education {
+.Followers-middle-section-1-collabratorDetails-privacy .Followers-middle-section-1-education-privacy {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
 }
 
-.middle-section-1-collabratorDetails .middle-section-1-education h6 {
+.Followers-middle-section-1-collabratorDetails-privacy .Followers-middle-section-1-education-privacy h6 {
   font-weight: 300;
   color: #726d6dea;
 }
 
-.middle-section-1-collabratorDetails .middle-section-1-subCollabrators {
+.Followers-middle-section-1-collabratorDetails-privacy .Followers-middle-section-1-subCollabrators-privacy {
   display: flex;
   align-items: center;
   gap: 2px;
   color: #514f4fea;
 }
 
-.middle-section-1-collabratorDetails .middle-section-1-subCollabrators h6 {
+.Followers-middle-section-1-collabratorDetails-privacy .Followers-middle-section-1-subCollabrators-privacy h6 {
   font-size: 7px;
   font-weight: 100;
   color: #828282ea;
 }
 
-.middle-section-1-paragraphAndArrow {
+.Followers-middle-section-1-paragraphAndArrow-privacy {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   padding: 2px 5px;
   align-items: center;
 }
-.middle-section-1-para {
+
+.Followers-middle-section-1-para-privacy {
   text-align: start;
   font-size: 14px;
 }
-.middle-section-1-paragrapgh-icon {
+
+.Followers-middle-section-1-iconAndImage-privacy {
+  display: flex;
+  height: 120px;
+  width: 110px;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.Followers-middle-section-1-iconAndImage-privacy img {
+  height: 100%;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.Followers-middle-section-1-paragrapgh-icon-privacy {
   font-size: 30px;
 }
 
-.middle-section-1-skill-list {
+.Followers-middle-section-1-skills-section-privacy {
+  height: 200px;
+}
+
+.Followers-middle-section-1-skill-list-privacy {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 5px;
   flex-wrap: wrap;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
-.middle-section-1-skill-list .middle-section-1-skillsMiniDiv {
+.Followers-middle-section-1-skill-list-privacy .Followers-middle-section-1-skillsMiniDiv-privacy {
   background-color: #f3efef;
   border-radius: 5px;
   padding: 5px 10px;
 }
 
-.middle-section-1-blur {
+.Followers-middle-section-1-blur-privacy {
   position: absolute;
   backdrop-filter: blur(1px);
   background-color: #ffffffbe;
-
   height: 140px;
   width: 100%;
   bottom: 0;
@@ -167,19 +206,20 @@
   gap: 15px;
   left: 0;
   align-items: center;
+  position: fixed;
 }
 
-.middle-section-1-blur h2 {
+.Followers-middle-section-1-blur-privacy h2 {
   font-weight: 600;
   font-size: 22px;
 }
 
-.middle-section-1-blur h3 {
+.Followers-middle-section-1-blur-privacy h3 {
   font-weight: 100;
   font-size: 22px;
 }
 
-.middle-section-1-blur .middle-section-1-lock {
+.Followers-middle-section-1-blur-privacy .Followers-middle-section-1-lock-privacy {
   border: 2px solid black;
   border-radius: 50%;
   height: fit-content;
@@ -187,12 +227,12 @@
   padding: 10px;
 }
 
-.middle-section-1-lockIcon {
+.Followers-middle-section-1-lockIcon-privacy {
   font-size: 45px;
   font-weight: 500;
 }
 
-.middle-section-1-btn {
+.Followers-middle-section-1-btn-privacy {
   background: linear-gradient(to bottom, #ffe9ed, white);
   color: black;
   border: 1px solid black;
@@ -204,38 +244,46 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1062px) {
-  .middle-section-1-middle-section {
+  .Followers-middle-section-1-middle-section-privacy {
     width: 40vw;
     padding: 30px;
   }
-  .middle-section-1-imageContainer {
+
+  .Followers-middle-section-1-imageContainer-privacy {
     width: 90px;
     height: 90px;
   }
 
-  .middle-section-1-profile-header {
+  .Followers-middle-section-1-profile-header-privacy {
     font-size: 20px;
   }
-  .middle-section-1-profile-info h2 {
+
+  .Followers-middle-section-1-profile-info-privacy h2 {
     font-size: 20px;
   }
-  .middle-section-1-about-section p {
+
+  .Followers-middle-section-1-about-section-privacy p {
     font-size: 16px;
   }
-  .middle-section-1-collabratorDetails {
+
+  .Followers-middle-section-1-collabratorDetails-privacy {
     width: 150px;
   }
-  .middle-section-1-collabratorDetails h4 {
+
+  .Followers-middle-section-1-collabratorDetails-privacy h4 {
     font-size: 18px;
   }
-  .middle-section-1-collabratorDetails .middle-section-1-subCollabrators h6 {
+
+  .Followers-middle-section-1-collabratorDetails-privacy .Followers-middle-section-1-subCollabrators-privacy h6 {
     font-size: 10px;
   }
-  .middle-section-1-blur {
+
+  .Followers-middle-section-1-blur-privacy {
     height: 170px;
   }
-  .middle-section-1-blur h2,
-  .middle-section-1-blur h3 {
+
+  .Followers-middle-section-1-blur-privacy h2,
+  .Followers-middle-section-1-blur-privacy h3 {
     font-size: 26px;
   }
 }
