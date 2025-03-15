@@ -11,7 +11,7 @@
   text-align: center;
   flex-direction: column;
   display: flex;
-  gap: 15px;
+  gap: 5px;
   width: 30vw;
   min-height: 100vh;
   position: relative;
@@ -38,8 +38,8 @@
 }
 
 .Followers-middle-section-1-imageContainer-privacy {
-  height: 75px;
-  width: 75px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
 }
 
@@ -89,7 +89,7 @@
 .Followers-middle-section-1-collabratorCard-privacy {
   padding: 2px 50px;
   display: flex;
-  gap: 10px;
+  gap: 3px;
   align-items: center;
 }
 
